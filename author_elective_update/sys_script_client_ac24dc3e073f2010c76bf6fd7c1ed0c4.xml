@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>short_description</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>On change</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+if(g_user.firstName=="System"){
+	
+	alert(g_form.getValue('short_description'));
+	
+alert(g_form.getSections(2));
+	  }}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-02 03:53:17</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ac24dc3e073f2010c76bf6fd7c1ed0c4</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_name>On change</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_script_client_ac24dc3e073f2010c76bf6fd7c1ed0c4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-02 08:47:57</sys_updated_on>
+        <table>x_58872_needit_needit</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>28d09919dbae0c14f492c59705961920</instance_id>
+        <instance_name>dev97516</instance_name>
+        <name>sys_script_client_ac24dc3e073f2010c76bf6fd7c1ed0c4</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;short_description&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;On change&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+if(g_user.firstName=="System"){
+	
+	alert(g_form.getValue('short_description'));
+	
+alert(g_form.getSections(2));
+	  }}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-02 03:53:17&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;ac24dc3e073f2010c76bf6fd7c1ed0c4&lt;/sys_id&gt;&lt;sys_mod_count&gt;24&lt;/sys_mod_count&gt;&lt;sys_name&gt;On change&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="NeedIt" source="x_58872_needit"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_ac24dc3e073f2010c76bf6fd7c1ed0c4&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-02 08:47:57&lt;/sys_updated_on&gt;&lt;table&gt;x_58872_needit_needit&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1696610499</payload_hash>
+        <record_name>On change</record_name>
+        <reverted_from/>
+        <source>f68d4ab107332010c76bf6fd7c1ed0f9</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-02 08:47:57</sys_created_on>
+        <sys_id>0ae8d9ba07ff2010c76bf6fd7c1ed0b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1792c434a160000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-02 08:47:57</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>42e8d9bad3ff20107f430a3e77eb14b1</update_guid>
+        <update_guid_history>42e8d9bad3ff20107f430a3e77eb14b1:-1696610499,7887d1baa8ff2010b4ad0c29b5798285:-1562906436,5ce199b680ff2010c2ac259edc81f16d:-1753347784,93a1d5b648ff2010b0e9b6fd696743b6:-215951113,9461d1b60bff20101d03d1ddde9b6e4c:-684578295,293dac7ed77f2010ce08b5acb26a492b:-1240050580,7a0dac3ee27f2010feb037c583c380dd:-863845321,6c9c687ebb7f20106a9f1e198e234093:683600348,b9db207e777f2010c96c7719dcb3c71b:1084289458,464be8fae67f2010d64c2db2f8a0f291:868815641,e28aa43ee97f2010073468c5a40adcc4:1331214555,ac69a8faba7f2010735c399d11a7bea9:1601438398,f3f8a4fae37f201034bed2bba5efd60e:2059029227,bf882cbae37f2010e993c2d6587c0201:-1721042197,750864ba747f2010e8048c6c90d9419e:558668709,b8c76c7a377f2010c7a4752f3214edef:-777170040,7d87ac7a1e7f2010301f7e4c401b6f06:674274982,b9e6207a547f2010252280b5024be4c7:-1025569106,5b06607a357f20107b5dc3f4c3a115ad:1357053176,93d5207ab87f2010aa00b9ba07deab5c:-603192380,74e89cfe7d3f2010c249cba152a64d4d:140459275,42371cbe7e3f20104ad5cc10453817e5:-2016398264,f5071cbe4a3f201081e587e7f695f2d4:-640380912,cbb598fa003f2010ba4864e5ee0f292e:1127348696,6575987e893f20108aeb37ae5fb5d46d:-872322057</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-04 05:25:17</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>089e6c1c8bf94d4ca862a0093f8db1a4</sys_id>
+        <sys_metadata>ac24dc3e073f2010c76bf6fd7c1ed0c4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>On change</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent display_value="Needit">7b9ecef107332010c76bf6fd7c1ed093</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_script_client_ac24dc3e073f2010c76bf6fd7c1ed0c4</sys_update_name>
+        <sys_update_version display_value="sys_script_client_ac24dc3e073f2010c76bf6fd7c1ed0c4">0ae8d9ba07ff2010c76bf6fd7c1ed0b1</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-04 05:25:17</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

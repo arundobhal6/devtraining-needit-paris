@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>short_description</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>OnChange</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+	
+   //Type appropriate comment here, and begin script below
+	if(g_form.getValue('short_description')=='Hello'){
+		g_form.flash("priority",'color-red',0);
+		alert("Value is Hello");
+		
+	}
+	else
+		{
+			alert("Some other Value"+g_form.getValue('short_description'));
+		}
+	alert(g_form.addDecoration('short_description','icon-star','Mark as favourite','color-green'));
+	
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-29 11:00:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>19d996b907332010c76bf6fd7c1ed0ea</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>OnChange</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_script_client_19d996b907332010c76bf6fd7c1ed0ea</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-30 08:03:36</sys_updated_on>
+        <table>x_58872_needit_needit</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>28d09919dbae0c14f492c59705961920</instance_id>
+        <instance_name>dev97516</instance_name>
+        <name>sys_script_client_19d996b907332010c76bf6fd7c1ed0ea</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;short_description&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;OnChange&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+	
+   //Type appropriate comment here, and begin script below
+	if(g_form.getValue('short_description')=='Hello'){
+		g_form.flash("priority",'color-red',0);
+		alert("Value is Hello");
+		
+	}
+	else
+		{
+			alert("Some other Value"+g_form.getValue('short_description'));
+		}
+	alert(g_form.addDecoration('short_description','icon-star','Mark as favourite','color-green'));
+	
+   
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-29 11:00:40&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;19d996b907332010c76bf6fd7c1ed0ea&lt;/sys_id&gt;&lt;sys_mod_count&gt;10&lt;/sys_mod_count&gt;&lt;sys_name&gt;OnChange&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="NeedIt" source="x_58872_needit"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_19d996b907332010c76bf6fd7c1ed0ea&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-30 08:03:36&lt;/sys_updated_on&gt;&lt;table&gt;x_58872_needit_needit&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-686105337</payload_hash>
+        <record_name>OnChange</record_name>
+        <reverted_from/>
+        <source>f68d4ab107332010c76bf6fd7c1ed0f9</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-30 08:03:36</sys_created_on>
+        <sys_id>349b720607b32010c76bf6fd7c1ed062</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17921cdf4de0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-30 08:03:36</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>7c9b7206d5b32010b339f8f918226461</update_guid>
+        <update_guid_history>7c9b7206d5b32010b339f8f918226461:-686105337,0baa768266b320103c6286f1c96d242d:-1578949977,413ab2c250b3201050fd0953efe66246:-816193075,5639f682d6b32010182bebe427247cc6:1839877792,8e457ece597320102ac63f3c6d81022d:922674008,a24f0ac6d33320105c203ff1794e325a:574624317,750f4206953320103ac6c7c2dc5c9fc2:638519409,72b98e821d3320107a9f0db3814d50a9:-616159289,560dda7def33201092d3b08c4ea0ed44:-767681649,b8cc523d3c3320102ce090605ae58f0c:-1043012831,058a123dd8332010a35c9cdcb9d0f4bd:279237714</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-01 07:36:47</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>b23edb94fe6944809d58bd99b4183c90</sys_id>
+        <sys_metadata>19d996b907332010c76bf6fd7c1ed0ea</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>OnChange</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent display_value="Needit">7b9ecef107332010c76bf6fd7c1ed093</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_script_client_19d996b907332010c76bf6fd7c1ed0ea</sys_update_name>
+        <sys_update_version display_value="sys_script_client_19d996b907332010c76bf6fd7c1ed0ea">349b720607b32010c76bf6fd7c1ed062</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-01 07:36:47</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

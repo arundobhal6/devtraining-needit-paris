@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>u_integer_2</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>AgeChange</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+
+   //Type appropriate comment here, and begin script below
+   if(newValue>=18){
+	   g_form.addInfoMessage('Now you can vote');
+	   var c=g_form.getDecimalValue('u_integer_2');
+	   alert("Value is "+c);
+	alert("The Integer value is "+g_form.getIntValue('u_integer_2'));
+	 
+   }
+	else{
+		   g_form.clearOptions('u_choice_5');
+	   g_form.addOption('u_choice_4','5','Dean');
+		g_form.addErrorMessage('You cannot vote');
+		
+	}
+}
+]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-30 05:06:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5501d20a07332010c76bf6fd7c1ed0e2</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>AgeChange</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_script_client_5501d20a07332010c76bf6fd7c1ed0e2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-01 06:29:41</sys_updated_on>
+        <table>x_58872_needit_needit</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>28d09919dbae0c14f492c59705961920</instance_id>
+        <instance_name>dev97516</instance_name>
+        <name>sys_script_client_5501d20a07332010c76bf6fd7c1ed0e2</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;u_integer_2&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;AgeChange&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+
+   //Type appropriate comment here, and begin script below
+   if(newValue&gt;=18){
+	   g_form.addInfoMessage('Now you can vote');
+	   var c=g_form.getDecimalValue('u_integer_2');
+	   alert("Value is "+c);
+	alert("The Integer value is "+g_form.getIntValue('u_integer_2'));
+	 
+   }
+	else{
+		   g_form.clearOptions('u_choice_5');
+	   g_form.addOption('u_choice_4','5','Dean');
+		g_form.addErrorMessage('You cannot vote');
+		
+	}
+}
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-30 05:06:29&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;5501d20a07332010c76bf6fd7c1ed0e2&lt;/sys_id&gt;&lt;sys_mod_count&gt;11&lt;/sys_mod_count&gt;&lt;sys_name&gt;AgeChange&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="NeedIt" source="x_58872_needit"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_5501d20a07332010c76bf6fd7c1ed0e2&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-01 06:29:41&lt;/sys_updated_on&gt;&lt;table&gt;x_58872_needit_needit&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>658347</payload_hash>
+        <record_name>AgeChange</record_name>
+        <reverted_from/>
+        <source>f68d4ab107332010c76bf6fd7c1ed0f9</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-01 06:29:41</sys_created_on>
+        <sys_id>faafaf1607732010c76bf6fd7c1ed05e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>179269e54e70000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-01 06:29:41</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>36afaf16507320104d418bfc21f14a5e</update_guid>
+        <update_guid_history>36afaf16507320104d418bfc21f14a5e:658347,34b61756ed332010bfac408e1c1d9498:483806838,274693d212332010360523b7d2a37f60:1471606156,aab4dbd2c233201014bd05eba86a318e:82101503,2f739f926d3320105072beaf40a90b46:1942955263,a572579267332010ba23ac97c10a13c2:225081733,57623e4e63732010f807c4040d443ec5:685622434,728e22cab97320106919d69394c70548:164946400,32ed26ca847320100fa344c540d4b625:-1753651172,470de60a4273201056a75787e04a15bb:1529325211,f30be60acf732010f9be06a5fc6e5a20:-2098323300,e603960a173320108bbd248c41a6a3cd:1205103426</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-01 07:36:31</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>11897f06645b461e8422c5f8c3862984</sys_id>
+        <sys_metadata>5501d20a07332010c76bf6fd7c1ed0e2</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>AgeChange</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent display_value="Needit">7b9ecef107332010c76bf6fd7c1ed093</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_script_client_5501d20a07332010c76bf6fd7c1ed0e2</sys_update_name>
+        <sys_update_version display_value="sys_script_client_5501d20a07332010c76bf6fd7c1ed0e2">faafaf1607732010c76bf6fd7c1ed05e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-01 07:36:31</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
